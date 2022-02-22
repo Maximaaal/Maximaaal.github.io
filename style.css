@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Montreal;
+    src: url("fonts/NeueMontreal-Light.otf");
+}
+
+@font-face {
+    font-family: MontrealReg;
+    src: url("fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: MontrealRegIt;
+    src: url("fonts/NeueMontreal-RegularItalic.otf");
+}
+
+html, body {
+    height: 250%;
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+
+#name {
+    float: left;
+    margin-left: 100px;
+    color: #e6e6e6;
+    font-family: MontrealReg;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#name:hover {
+    text-decoration: underline;
+}
+
+#about {
+    float: right;
+    margin-right: 100px;
+    color: #FFFFFF;
+    font-family: MontrealReg;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#about a {
+    color: #FFFFFF;
+    
+    text-decoration: none;
+    
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+#icon {
+    width: 100px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 50px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+main {
+    position: absolute;
+    top: 300px;
+    width:100%;
+    
+    justify-content: center;
+}
+
+#blackBox {
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    background-color: #000000;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 10;
+    top: 200px;
+    border-radius: 50px 50px 0 0;
+}
+
+#blackBox p {
+    position: relative;
+    float: left;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: MontrealReg;
+    font-size: 35px;
+    text-decoration: none;
+    letter-spacing: 0.5px;;
+}
+
+#projectTitleBox {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 600px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    border-radius: 0 0 50px 50px;
+    z-index: 2;
+}
+
+#projectTitleBox a {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: MontrealReg;
+    color: #000000;
+    font-size: 35px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+#projectTitleBox a:hover{
+    text-decoration: underline;
+}
+
+#thumb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 10%;
+    border-radius: 50px;
+}
+
+
+#projectText {
+    position: absolute;
+    top: 150px;
+    width: 70%;
+    display: block;
+    margin-left: 15%;
+    margin-right: auto;
+    font-family: MontrealReg;
+    font-size: 20px;
+    color: #000000;
+}
+
+#projectText a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#projectText a:hover {
+    text-decoration: underline;
+}
+
+#bottomBox {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    background-color: #000000;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 10;
+    top: 15px;
+    border-radius: 50px 50px 0 0;
+}
+
+#bottomBox a {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: MontrealReg;
+    font-size: 35px;
+    text-decoration: none;
+    letter-spacing: 0.5px;;
+}
+
+#bottomBox a:hover {
+    text-decoration: underline;
+}
+
+main a img {
+    cursor: pointer;
+}
+
+#aboutSection {
+    position: relative;
+    top: -200px;
+    margin-left: 107px;
+    margin-right: 100px;
+}
+
+h1 {
+    position: relative;
+    font-family: MontrealReg;
+    
+}
+
+#aboutText {
+    position: relative;
+    font-family: MontrealReg;
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    letter-spacing: 0.4px;
+
+}
+
+#aboutSection a {
+    position: relative;
+    font-family: MontrealReg;
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+#aboutSection img {
+    position: relative;
+    top: 50px;
+    max-width: 350px;
+    float: right;
+    border-radius: 50px;
+}
+
+#playSound {
+    position: relative;
+    left: 45%;
+    bottom: 100px;
+}
