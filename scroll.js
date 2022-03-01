@@ -14,8 +14,9 @@ document.addEventListener("scroll", function () {
 });
 
 window.addEventListener("load", function () {
-  const dynamicHeight = 400 - document.getElementById("projectTitleBox").offsetHeight
+  const dynamicHeight = 370 - document.getElementById("projectTitleBox").offsetHeight
   document.getElementById("margin").style.height = dynamicHeight + "px";
   },
   false
 );
+
