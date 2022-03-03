@@ -141,7 +141,8 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 80%;
+    max-width: 1500px;
     margin-bottom: 10%;
     border-radius: 50px;
 }
@@ -352,6 +353,10 @@ h1 {
 
   @media only screen and (max-width: 590px) {
 
+    main {
+        margin-top: -100px;
+    }
+
     #projectTitleBox {
         position: fixed;
         display: none;
@@ -382,6 +387,6 @@ h1 {
     }
 
     #thumb {
-        border-radius: 30px;
+        border-radius: 20px;
     }
   }
