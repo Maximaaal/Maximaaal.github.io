@@ -1,5 +1,6 @@
 const projectTitleTag = document.getElementById("projectTitle");
 const sections = document.querySelectorAll("main section");
+const showVidControls = document.getElementsByClassName("vidControls")
 
 document.addEventListener("scroll", function () {
   const pixels = window.pageYOffset;
@@ -19,4 +20,11 @@ window.addEventListener("load", function () {
   },
   false
 );
+
+showVidControls[0].addEventListener("mouseover", mouseOver)
+
+function mouseOver() {
+  console.log("mouseOver")
+  showVidControls[0].setAttribute('controls', '')
+}
 
