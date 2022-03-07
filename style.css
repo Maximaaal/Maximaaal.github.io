@@ -364,6 +364,10 @@ h1 {
         margin-top: -80px;
     }
 
+    html, body{
+        height: 100%;
+    }
+
     #projectTitleBox {
         position: fixed;
         display: none;
@@ -395,6 +399,7 @@ h1 {
 
     #thumb {
         border-radius: 20px;
+        width: 80%;
     }
 
     #aboutSection {
