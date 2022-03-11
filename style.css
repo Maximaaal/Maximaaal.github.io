@@ -30,7 +30,8 @@ nav {
 
 #name {
     float: left;
-    margin-left: 48px;
+    margin-left: 12px;
+    margin-top: 10px;
     color: #e6e6e6;
     font-family: MontrealReg;
     font-size: 20px;
@@ -44,7 +45,8 @@ nav {
 
 #about {
     float: right;
-    margin-right: 48px;
+    margin-right: 12px;
+    margin-top: 10px;
     color: #FFFFFF;
     font-family: MontrealReg;
     font-size: 20px;
@@ -153,9 +155,11 @@ main {
 #projectText {
     position: absolute;
     top: 150px;
-    width: 70%;
+    width: 60%;
+    max-width: 1000px;
     display: block;
-    margin-left: 15%;
+    margin-left: 50%;
+    transform: translate(-50%);
     margin-right: auto;
     font-family: MontrealReg;
     font-size: 20px;
