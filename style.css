@@ -417,6 +417,7 @@ h1 {
         top: 65px;
         width: 80%;
         margin-left: 40px;
+        transform: translate(0%);
     }
 
     #margin {
