@@ -228,9 +228,9 @@ h1 {
     display: block;
     position: relative;
     font-family: MontrealReg;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 40px;
-    max-width: 800px;
+    max-width: 1000px;
     letter-spacing: 0.4px;
     
 }
@@ -248,7 +248,7 @@ h1 {
 #aboutSection img {
     display: block;
     position: relative;
-    top: 25px;
+    
     max-width: 350px;
     border-radius: 50px;
     margin-bottom: 50px;
