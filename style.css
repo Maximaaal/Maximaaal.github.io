@@ -66,6 +66,23 @@ nav {
     100% { transform: rotate(360deg); }
 }
 
+/* style this: <div id="tagline">
+      <p>DESIGNER & DEVELOPER</p>
+    </div> */
+
+#tagline {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: MontrealReg;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    z-index: 1;
+}
+
+
 /* Hide content initially */
 #content {
     display: none;
