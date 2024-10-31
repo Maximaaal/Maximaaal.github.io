@@ -300,6 +300,10 @@ h1 {
     color: #000000;
 }
 
+#aboutSection a:hover {
+    color: #0303fc;
+}
+
 #aboutSection img {
     display: block;
     position: relative;
