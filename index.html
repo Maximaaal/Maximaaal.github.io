@@ -1,95 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E45MQ6XVVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E45MQ6XVVV');
-</script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Max Rentmeester &#8212; Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-  </head>
-  <body>
-    <div id="preloader">
-      <div class="spinner"></div>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E45MQ6XVVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E45MQ6XVVV');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Rentmeester &#8212; Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="icon" href="img/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
   </div>
-
-    <nav>
-      <a id="name" href="index.html">MAX RENTMEESTER</a>
-      <div id="about">
-        <!-- <a href="about.html">ABOUT</a> -->
-        <a href="about.html">ABOUT & CONTACT</a>
-      </div>
-    </nav>
-    <!-- <img id="icon" src="img/icon.svg" alt=""> -->
-    <div id="blackBox">
-      <p>&darr; &nbsp;&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;&nbsp; &darr;</p>
-    </div>
-    <div id="margin"></div>
   
-    <div id="projectTitleBox">
-      <a id="projectTitle" href="cyber.html">CYBERNETIC ORACLE</a>
+
+  <div class="sticky-notch">
+    <a href="index.html" class="name-link">Max Rentmeester</a>
+    <p class="contact-link">&darr;</p>
+    <a href="about.html" class="contact-link">About & Contact</a>
+  </div>
+  
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">MAX RENTMEESTER</a>
+      </div>
     </div>
-    <main>
-      <section project="CYBERNETIC ORACLE" page="cyber.html">
-        <a href="cyber.html">
-          <img id="thumb" src="img/cyber_thumb.jpg" alt=""/>
-        </a>
-      </section>
-      <section project="NIKE KID'S POD" page="nike.html">
-        <a href="nike.html">
-          <img id="thumb" src="img/nike/nike1.jpg" alt=""/>
-        </a>
-      </section>
-      <section project="FRAGMENTATION" page="fragmentation.html">
-          <a href="fragmentation.html">
-            <img id="thumb" src="img/fragmentation_thumb.jpg" alt=""/>
-          </a>
-      </section>
-      <section project="ETHERSCAPE" page="etherscape.html">
-        <a href="etherscape.html">
-          <img id="thumb" src="img/ether_thumb.jpg" alt=""/>
-        </a>
-    </section>
-    <section project="PATTERN" page="pattern.html">
-      <a href="pattern.html">
-        <img id="thumb" src="img/pattern_thumb.jpg" alt=""/>
-      </a>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <div class="intro-text fade-in">
+        <h1>&#9679 Multidisciplinary designer focusing on interaction and experience. Creating thoughtful digital and physical experiences through design and code.</h1>
+        <p>Based in The Netherlands.</p>
+        <br>
+        <nav class="nav-links">
+          <a href="about.html">&#8594; About & Contact</a>
+        </nav>
+      </div>
+    </div>
   </section>
-  <section project="DAIKU" page="daiku.html">
-    <a href="daiku.html">
-      <img id="thumb" src="img/daiku/daiku1.jpg" alt=""/>
-    </a>
-</section>
-      
-      <section project="BEST BEFORE EXPIRED" page="mold.html">
-        <a href="mold.html">
-          <img id="thumb" src="img/mold/mold.png" alt=""/>
-        </a>
-      </section>
 
-      <section project="MYTHODOLOGY" page="myth.html"></section>
-        <a href="myth.html">
-          <img id="thumb" src="img/myth/myth1.jpg" alt=""/>
+  <section class="projects">
+    <div class="container">
+      <div class="projects-grid">
+        <a href="nike.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/nike/nike1.jpg" alt="Nike Kid's Pod" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Nike Kid's Pod</h3>
+              <p class="project-category">Interactive Installation</p>
+            </div>
+            <span class="project-number">01</span>
+          </div>
         </a>
-      </section>
+        
+        <a href="cyber.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/cyber_thumb.jpg" alt="Cybernetic Oracle" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Cybernetic Oracle</h3>
+              <p class="project-category">Interactive Installation</p>
+            </div>
+            <span class="project-number">02</span>
+          </div>
+        </a>
+        
+        <a href="fragmentation.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/fragmentation_thumb.jpg" alt="Fragmentation" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Fragmentation</h3>
+              <p class="project-category">Interactive Design</p>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+        </a>
+        
+        <a href="etherscape.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/ether_thumb.jpg" alt="Etherscape" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Etherscape</h3>
+              <p class="project-category">Interactive Installation</p>
+            </div>
+            <span class="project-number">04</span>
+          </div>
+        </a>
+        
+        <a href="pakkend.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/pakkend/mockup2.png" alt="Pakkend" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Pakkend</h3>
+              <p class="project-category">Branding & UI</p>
+            </div>
+            <span class="project-number">05</span>
+          </div>
+        </a>
+        
+        <a href="pattern.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/pattern_thumb.jpg" alt="Pattern" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Pattern</h3>
+              <p class="project-category">Graphic Design</p>
+            </div>
+            <span class="project-number">06</span>
+          </div>
+        </a>
 
-      <section project="HYBRID PUBLICATION" page="hybrid.html">
-        <a href="hybrid.html">
-          <img id="thumb" src="img/hybrid/hybrid2.jpg" alt=""/>
+        <a href="myth.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/myth/myth1.jpg" alt="Mold" class="project-image image-outline">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Mythodology</h3>
+              <p class="project-category">Editorial Design</p>
+            </div>
+            <span class="project-number">09</span>
+          </div>
         </a>
-      </section>
-    </main>
-    <script src="scroll.js"></script>
-  </body>
+
+        <a href="daiku.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/daiku/daiku1.jpg" alt="Daiku" class="project-image">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Daiku</h3>
+              <p class="project-category">Generative Art</p>
+            </div>
+            <span class="project-number">07</span>
+          </div>
+        </a>
+
+
+        <a href="mold.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/mold/mold.png" alt="Mold" class="project-image image-outline">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Best Before Expired</h3>
+              <p class="project-category">Generative Art</p>
+            </div>
+            <span class="project-number">08</span>
+          </div>
+        </a>
+
+
+        <a href="hybrid.html" class="project fade-in">
+          <div class="project-image-container">
+            <img src="img/hybrid/hybrid1.png" alt="Mold" class="project-image image-outline">
+          </div>
+          <div class="project-info">
+            <div>
+              <h3 class="project-title">Hybrid Publication</h3>
+              <p class="project-category">Editorial Design</p>
+            </div>
+            <span class="project-number">10</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <h3>&copy; 2025 Max Rentmeester <br> Designed and developed by Max Rentmeester</h3>
+          <p></p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:contact@maxrentmeester.com">contact@maxrentmeester.com</a>
+          <a href="https://www.instagram.com/maximaal____/">Instagram</a>
+          <a href="https://www.linkedin.com/in/max-rentmeester-44b3b1327/">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include the JavaScript file -->
+  <script src="script.js"></script>
+</body>
 </html>

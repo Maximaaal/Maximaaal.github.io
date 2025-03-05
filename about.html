@@ -1,72 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E45MQ6XVVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+<head>
 
-  gtag('config', 'G-E45MQ6XVVV');
-</script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About & Contact</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body style="height: 100%;">
-    <script></script>
-    <nav>
-      <a id="name" href="index.html">MAX RENTMEESTER</a>
-      <div id="about">
-        <!-- <a href="about.html">ABOUT</a> -->
-        <a href="about.html">ABOUT & CONTACT</a>
-      </div>
-    </nav>
-    <!-- <img id="icon" src="img/icon.svg" alt=""> -->  
-    <main>
-      <div id="aboutSection">
-        
-        <!-- <h1>ABOUT</h1> -->
-        <p id="aboutText">I am a visual and interactive designer based in Rotterdam, specializing in the use of creative technologies to craft immersive and engaging experiences. With a strong foundation in both concept development and hands-on technical execution, I bring ideas to life through fast prototyping and production. By continuously exploring emerging technologies, I create impactful experiences that resonate with audiences from start to finish.</p>
-          <img src="img/profilepic.jpg" alt="">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E45MQ6XVVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E45MQ6XVVV');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact &#8212; Max Rentmeester</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="about-page">
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
 
-        <!-- <h1>EXPERIENCE</h1>  -->
-        
-        <!-- <p id="aboutText">
-          2015&emsp;&emsp;&emsp;DeltaZuid
-          <br>
-          2017&emsp;&emsp;&emsp;Edhv
-          <br>
-          2020&emsp;&emsp;Random Studio 
-        </p> -->
-        <!-- <h1>CONTACT</h1> -->
-        <br>
-        <a href="mailto:contact@maxrentmeester.nl">&#8599;contact@maxrentmeester.nl</a>
-        <br>
-        <a href="MaxRentmeester-CV-2024.pdf" target="_blank">&#8599;Curriculum Vitae</a>
-        <br>
-        <a href="https://www.instagram.com/maximaal____/" target="_blank">&#8599;Instagram</a>
-        <br>
-        <a href="https://github.com/Maximaaal" target="_blank">&#8599;GitHub</a>
-        <br>
-        <br>
-        <br>
-        <div style="max-width: 600px;">
-          <p id="aboutText">Research:</p>
-        <a  href="research/main.pdf" target="_blank">Designing for Interaction: Strategic Approaches to Increasing Engagement in Interactive Installations</a>
-        <br>
-        <br>
-        <a href="research/dh.pdf" target="_blank">Enriching Metadata and the Potential Benefit for Colonial Narratives in the Rijksstudio Database</a>
-        <br>
+  <div class="sticky-notch">
+    <a href="index.html" class="name-link">Max Rentmeester</a>
+    <p class="contact-link">&darr;</p>
+    <a href="about.html" class="contact-link">About & Contact</a>
+  </div>
+  
+  <div class="main-container">
+    <main class="container">
+
+      <a href="index.html" class="back-link">Back to Projects</a>
+
+      <section class="about-section fade-in">
+        <div class="about-column">
+          <p class="about-text">
+            I am a visual and interactive designer based in Rotterdam, specializing in the use of creative technologies to craft immersive and engaging experiences. With a strong foundation in both concept development and hands-on technical execution, I bring ideas to life through fast prototyping and production. By continuously exploring emerging technologies, I create impactful experiences that resonate with audiences from start to finish.
+          </p>
+          
+
+          <a href="mailto:contact@maxrentmeester.nl" class="external-link">contact@maxrentmeester.nl</a> <br>
+          <a href="MaxRentmeester-CV-2024.pdf" target="_blank" class="external-link">Curriculum Vitae</a> <br>
+          <a href="https://www.instagram.com/maximaal____/" target="_blank" class="external-link">Instagram</a> <br>
+          <a href="https://github.com/Maximaaal" target="_blank" class="external-link">GitHub</a> <br>
+          
+
+          <div class="research-section">
+            <p class="research-title">Research:</p>
+            <div class="research-links">
+              <a href="research/main.pdf" target="_blank">Designing for Interaction: Strategic Approaches to Increasing Engagement in Interactive Installations</a>
+              <a href="research/dh.pdf" target="_blank">Enriching Metadata and the Potential Benefit for Colonial Narratives in the Rijksstudio Database</a>
+            </div>
+          </div>
         </div>
         
-
-      </div>
+        <div class="about-column">
+          <img src="img/profilepic.jpg" alt="Max Rentmeester" class="profile-image">
+        </div>
+      </section>
     </main>
-    <script src="scroll.js"></script>
-  </body>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <h3>&copy; 2025 Max Rentmeester <br> Designed and developed by Max Rentmeester</h3>
+          <p></p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:contact@maxrentmeester.com">contact@maxrentmeester.com</a>
+          <a href="https://www.instagram.com/maximaal____/">Instagram</a>
+          <a href="https://www.linkedin.com/in/max-rentmeester-44b3b1327/">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,64 +1,86 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E45MQ6XVVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E45MQ6XVVV');
-</script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Max Rentmeester &#8212; Fragmentation</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a id="name" href="index.html">MAX RENTMEESTER</a>
-      <div id="about">
-        <!-- <a href="about.html">ABOUT</a> -->
-        <a href="about.html">ABOUT & CONTACT</a>
-      </div>
-    </nav>
-    <!-- <img id="icon" src="img/icon.svg" alt=""> -->
-
-    <div id="projectTitleBox" style="position: fixed">
-      <a id="projectTitle" href="cyber.html">FRAGMENTATION</a>
-    </div>
-    <div id="projectText">
-      <p>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E45MQ6XVVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E45MQ6XVVV');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fragmentation &#8212; Max Rentmeester</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  
+  <div class="sticky-notch">
+    <a href="index.html" class="name-link">Max Rentmeester</a>
+    <p class="contact-link">&darr;</p>
+    <a href="about.html" class="contact-link">About & Contact</a>
+  </div>
+  
+  <main class="container">
+    <a href="index.html" class="back-link">Back to Projects</a>
+    
+    <header class="project-header fade-in">
+      <h1 class="project-title">Fragmentation</h1>
+      <p class="project-category">Interactive Design</p>
+      <p class="project-intro">
         The fragmentation tool is aimed for graphic designers wanting to bring a bit more dadaism into their designs. Graphic designers are known to be pixel perfect and striving for perfectly kerned typography, this tool will bring some randomness and a good amount of chaos.
 The main way to interact with the tool and apply distortion will be a rectangular drag selections tool which the user controls with their mouse. The tool will be accompanied with a graphical user interface reminiscing of graphic design tools such as photoshop, illustrator etc. to give the user a sense of familiarity. The main futures of the tool will be displacement, pixelation, and blur. The blur and pixelate tool will give more layered feeling to the overall design by adding more textures.
       </p>
-    </div>
-    <div id="margin"></div>
-
-    <main style="top: 450px">
-      <section project="FRAGMENTATION">
-        <video class="vidControls" autoplay muted loop style="margin-top: 50px; width: 60%; border-radius: 0;" id="thumb" src="img/fragmentation/fragmentation1.mp4"></video>
-      </section>
-      <section project="FRAGMENTATION" page="cyber.html">
-        <img id="thumb" src="img/fragmentation/fragmentation1_bg.jpg" style="width: 60%;" alt="" />
-      </section>
-      <section project="FRAGMENTATION" page="cyber.html">
-        <img id="thumb" src="img/fragmentation/fragmentation2_bg.jpg" style="width: 60%;" alt="" />
-      </section>
-      <section project="FRAGMENTATION" page="cyber.html">
-        <img id="thumb" src="img/fragmentation/fragmentation3_bg.jpg" style="width: 60%;" alt="" />
-      </section>
-      <section project="FRAGMENTATION" page="cyber.html">
-        <img id="thumb" src="img/fragmentation/fragmentation4_bg.jpg" style="width: 60%;" alt="" />
-      </section>
-      <div id="centerButton">
-        <a id="returnButton" href="index.html">BACK TO PROJECTS</a>
+    </header>
+    
+    <section class="project-content">
+      <div class="image-container fade-in">
+        <video style="max-width: 800px;" autoplay muted loop class="project-video" src="img/fragmentation/fragmentation1.mp4"></video>
       </div>
       
-    </main>
-    <script src="scroll.js"></script>
-  </body>
+      <div class="image-container fade-in">
+        <img src="img/fragmentation/fragmentation1_bg.jpg" alt="Fragmentation" class="project-image">
+      </div>
+      
+      <div class="image-container fade-in">
+        <img src="img/fragmentation/fragmentation2_bg.jpg" alt="Fragmentation" class="project-image">
+      </div>
+      
+      <div class="image-container fade-in">
+        <img src="img/fragmentation/fragmentation3_bg.jpg" alt="Fragmentation" class="project-image">
+      </div>
+      
+      <div class="image-container fade-in">
+        <img src="img/fragmentation/fragmentation4_bg.jpg" alt="Fragmentation" class="project-image">
+      </div>
+    </section>
+    
+    <div class="center-button">
+      <a href="index.html" class="return-button">Back to Projects</a>
+    </div>
+    
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-info">
+            <h3>&copy; 2025 Max Rentmeester <br> Designed and developed by Max Rentmeester</h3>
+            <p></p>
+          </div>
+          <div class="footer-links">
+            <a href="mailto:contact@maxrentmeester.com">contact@maxrentmeester.com</a>
+            <a href="https://www.instagram.com/maximaal____/">Instagram</a>
+            <a href="https://www.linkedin.com/in/max-rentmeester-44b3b1327/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
