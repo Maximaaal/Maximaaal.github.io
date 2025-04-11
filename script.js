@@ -27,10 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const horizonLine = document.createElement('div');
     horizonLine.id = 'horizon-line';
+
+  
+    const timeDisplay = document.createElement('div');
+    timeDisplay.id = 'time-display';
     
     sunContainer.appendChild(sunElement);
     sunTrajectory.appendChild(sunContainer);
     sunTrajectory.appendChild(horizonLine);
+    sunTrajectory.appendChild(timeDisplay);
     
     const playbackControls = document.createElement('div');
     playbackControls.id = 'playback-controls';
@@ -236,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gradientOverlay.style.background = gradient;
       
       updateSunPosition(time);
-      
+      updateTimeDisplay(time);
       updateSpeedIndicator();
     }
     
@@ -252,6 +257,28 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         speedIndicator.textContent = "";
       }
+    }
+
+    function updateTimeDisplay(time) {
+      const now = new Date();
+      
+      if (!useRealTime) {
+    
+        const hours = Math.floor(time);
+        const minutes = Math.floor((time - hours) * 60);
+        const seconds = Math.floor(((time - hours) * 60 - minutes) * 60);
+        
+        now.setHours(hours, minutes, seconds);
+      }
+      
+      const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+      const day = days[now.getDay()];
+      
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      
+      timeDisplay.textContent = `${day} ${hours}:${minutes}:${seconds}`;
     }
     
     function updateRealTime() {
@@ -378,6 +405,11 @@ document.addEventListener('DOMContentLoaded', function() {
       animationFrameId = requestAnimationFrame(animateTime);
       
       setInterval(updateRealTime, 1000);
+      setInterval(function() {
+        if (useRealTime) {
+          updateTimeDisplay(getCurrentTime());
+        }
+      }, 1000);
     }, 50);
     
     window.addEventListener('resize', function() {

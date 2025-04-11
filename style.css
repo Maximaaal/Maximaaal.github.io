@@ -755,6 +755,29 @@ font-size: 10px;
 font-size: 18px;
 }
 
+
+
+#time-display {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  font-family: "Supply", monospace;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  user-select: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+#time-controls:hover #time-display {
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
 #sunset-gradient {
   display: none;
