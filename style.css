@@ -759,8 +759,8 @@ font-size: 18px;
 
 #time-display {
   position: absolute;
-  top: 60px;
-  left: 0;
+  top: 55px;
+  left: -10px;
   width: 100%;
   font-family: "Supply", monospace;
   font-size: 14px;
@@ -776,6 +776,40 @@ font-size: 18px;
 #time-controls:hover #time-display {
   opacity: 0;
   pointer-events: none;
+}
+
+
+
+#meatball-menu {
+  position: absolute;
+  top: 65px; 
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.meatball-dot {
+  width: 2px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+
+#time-controls:hover #meatball-menu {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+@media (max-width: 768px) {
+  #meatball-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

@@ -32,10 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const timeDisplay = document.createElement('div');
     timeDisplay.id = 'time-display';
     
+  
+    const meatballMenu = document.createElement('div');
+    meatballMenu.id = 'meatball-menu';
+    
+    for (let i = 0; i < 3; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'meatball-dot';
+      meatballMenu.appendChild(dot);
+    }
+    
     sunContainer.appendChild(sunElement);
     sunTrajectory.appendChild(sunContainer);
     sunTrajectory.appendChild(horizonLine);
     sunTrajectory.appendChild(timeDisplay);
+    sunTrajectory.appendChild(meatballMenu); 
     
     const playbackControls = document.createElement('div');
     playbackControls.id = 'playback-controls';
